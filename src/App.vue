@@ -1,13 +1,15 @@
 <script>
+import AppMain from './components/AppMain.vue'
 export default {
-
+  components: { AppMain }
 }
 </script>
 
 <template>
   <header>
-    <h1 class="text-center py-3">Pokemon</h1>
+    <h1 class="text-center">Pokemon</h1>
   </header>
+  <app-main></app-main>
 </template>
 
 <style lang="scss">
