@@ -1,23 +1,24 @@
 <script>
 import axios from 'axios';
+import { store } from './data/store';
 import AppMain from './components/AppMain.vue';
 export default {
   components: { AppMain },
   data() {
     return {
-      characters: []
+      store
     }
   },
   methods: {
-    fetchCharacters() {
-      axios.get('https://41tyokboji.execute-api.eu-central-1.amazonaws.com/dev/api/v1/pokemons?per=10&page=5')
+    fetchCharacters(url) {
+      axios.get(url)
         .then(res => {
-          this.characters = res.data.docs;
+          this.store.characters = res.data.docs;
         })
     }
   },
   created() {
-    this.fetchCharacters();
+    this.fetchCharacters(store.apiUri);
   }
 }
 </script>

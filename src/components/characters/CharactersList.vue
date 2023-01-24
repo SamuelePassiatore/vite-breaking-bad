@@ -1,8 +1,12 @@
 <script>
-import CharactersCard from './CharactersCard.vue'
+import { store } from '../../data/store';
+import CharactersCard from './CharactersCard.vue';
 export default {
     name: 'CharactersList',
     components: { CharactersCard },
+    data() {
+        return store
+    },
 
 }
 </script>

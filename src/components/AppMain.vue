@@ -9,7 +9,7 @@ export default {
 
 <template>
     <main class="container rounded-5">
-        <!-- <characters-list></characters-list> -->
+        <characters-list></characters-list>
     </main>
 </template>
 
