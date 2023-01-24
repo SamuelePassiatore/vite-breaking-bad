@@ -13,10 +13,10 @@ export default {
 
 <template>
     <section id="characters">
-        <div class="row justify-content-center">
+        <div v-if="isLoading">Loading..</div>
+        <div v-else class="row justify-content-center">
             <characters-card v-for="character in characters" :key="character.id" :image="character.imageUrl"
                 :number="character.number" :name="character.name" :type="character.type1" :color="character.color">
-
             </characters-card>
         </div>
     </section>
@@ -29,5 +29,6 @@ export default {
     margin: 30px 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 </style>

@@ -11,10 +11,15 @@ export default {
   },
   methods: {
     fetchCharacters(url) {
-      axios.get(url)
-        .then(res => {
-          this.store.characters = res.data.docs;
-        })
+      store.isLoading = true,
+        axios.get(url)
+          .then(res => {
+            this.store.characters = res.data.docs;
+          }).catch(error => {
+            store.characters = [];
+          }).then(() => {
+            // store.isLoading = false;
+          });
     }
   },
   created() {
