@@ -18,7 +18,7 @@ export default {
           }).catch(error => {
             store.characters = [];
           }).then(() => {
-            // store.isLoading = false;
+            store.isLoading = false;
           });
     }
   },

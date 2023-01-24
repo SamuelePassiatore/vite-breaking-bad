@@ -13,7 +13,7 @@ export default {
 
 <template>
     <section id="characters">
-        <div v-if="isLoading">Loading..</div>
+        <div v-if="isLoading" class="fs-1">Loading..</div>
         <div v-else class="row justify-content-center">
             <characters-card v-for="character in characters" :key="character.id" :image="character.imageUrl"
                 :number="character.number" :name="character.name" :type="character.type1" :color="character.color">
