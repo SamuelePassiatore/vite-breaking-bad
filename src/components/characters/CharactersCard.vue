@@ -47,7 +47,7 @@ export default {
 }
 
 .poison-type {
-    background-color: purple;
+    background-color: #BB8FCE;
 }
 
 .fairy-type {
@@ -55,10 +55,10 @@ export default {
 }
 
 .fire-type {
-    background-color: red;
+    background-color: lightcoral;
 }
 
 .ice-type {
-    background-color: dodgerblue;
+    background-color: lightblue;
 }
 </style>
