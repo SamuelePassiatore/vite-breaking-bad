@@ -2,19 +2,21 @@
 import CharactersList from './characters/CharactersList.vue';
 export default {
     name: 'App Main',
-    components: { CharactersList }
+    components: { CharactersList },
+    props: {
+        characters: Array
+    }
 }
 </script>
 
 <template>
     <main class="container rounded-5">
-        <characters-list></characters-list>
+        <characters-list :characters="characters"></characters-list>
     </main>
 </template>
 
 <style lang="scss" scoped>
 main {
-    width: 80%;
     min-height: 80vh;
     background-color: white;
     overflow-y: auto;
