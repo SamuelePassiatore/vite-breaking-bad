@@ -3,15 +3,13 @@ import CharactersList from './characters/CharactersList.vue';
 export default {
     name: 'App Main',
     components: { CharactersList },
-    props: {
-        characters: Array
-    }
+
 }
 </script>
 
 <template>
     <main class="container rounded-5">
-        <characters-list :characters="characters"></characters-list>
+        <!-- <characters-list></characters-list> -->
     </main>
 </template>
 

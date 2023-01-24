@@ -3,9 +3,7 @@ import CharactersCard from './CharactersCard.vue'
 export default {
     name: 'CharactersList',
     components: { CharactersCard },
-    props: {
-        characters: Array
-    }
+
 }
 </script>
 
