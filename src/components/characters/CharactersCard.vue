@@ -13,7 +13,8 @@ export default {
 </script>
 
 <template>
-    <div class="character-card rounded-3 m-2 text-center">
+    <div class="character-card rounded-3 m-2 text-center"
+        v-bind:class="{ 'poison-type': type === 'Poison', 'fairy-type': type === 'Fairy', 'fire-type': type === 'Fire', 'ice-type': type === 'Ice' }">
         <div class="container-img d-flex justify-content-center align-items-center"><img :src="image" :alt="name">
         </div>
         <div class="pt-1">{{ number }}</div>
@@ -35,6 +36,7 @@ export default {
     height: 110px;
     width: 110px;
     border: 1px solid grey;
+    background-color: white;
     border-radius: 50%;
     margin: 2px auto;
     box-shadow: 0 0 6px 3px rgba(black, 0.5);
@@ -42,5 +44,21 @@ export default {
     img {
         width: 65px;
     }
+}
+
+.poison-type {
+    background-color: purple;
+}
+
+.fairy-type {
+    background-color: pink;
+}
+
+.fire-type {
+    background-color: red;
+}
+
+.ice-type {
+    background-color: dodgerblue;
 }
 </style>
