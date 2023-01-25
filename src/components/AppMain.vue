@@ -1,13 +1,14 @@
 <script>
 import CharactersList from './characters/CharactersList.vue';
+import SelectForm from './SelectForm.vue';
 export default {
     name: 'App Main',
-    components: { CharactersList },
-
+    components: { CharactersList, SelectForm },
 }
 </script>
 
 <template>
+    <select-form></select-form>
     <main class="container rounded-5">
         <characters-list></characters-list>
     </main>
@@ -15,8 +16,9 @@ export default {
 
 <style lang="scss" scoped>
 main {
-    min-height: 80vh;
+    height: 80vh;
     background-color: white;
     overflow-y: auto;
+    border: 2px solid black;
 }
 </style>
