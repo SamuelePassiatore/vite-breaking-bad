@@ -12,9 +12,9 @@ export default {
     }
   },
   methods: {
-    fetchCharacters(url) {
+    fetchCharacters(endpoint = this.apiUri) {
       store.isLoading = true,
-        axios.get(this.apiUri)
+        axios.get(endpoint)
           .then(res => {
             this.store.characters = res.data.docs;
           }).catch(error => {
@@ -28,7 +28,7 @@ export default {
       store.isLoading = true;
       axios.get(this.apiUri + '/types1')
         .then(res => {
-          store.types = res.data.sort();
+          store.types = res.data;
         }).catch(error => {
           console.log(error)
         }).then(() => {
@@ -37,7 +37,8 @@ export default {
     },
 
     filterPokemon(type) {
-      console.log(type);
+      const url = type ? `${this.apiUri}?eq[type1]=${type}` : this.apiUri;
+      this.fetchCharacters(url);
     }
   },
   created() {
