@@ -25,5 +25,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+select {
+    cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto !important;
+}
 </style>

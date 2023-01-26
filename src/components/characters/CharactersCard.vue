@@ -7,6 +7,7 @@ export default {
         number: Number,
         name: String,
         type: String,
+
     }
 }
 </script>
@@ -27,7 +28,7 @@ export default {
     min-height: 250px;
     width: 18%;
     padding: 15px 5px;
-    border: 1px solid black;
+    cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto !important;
 
     .container-img {
         height: 110px;
@@ -44,6 +45,10 @@ export default {
     }
 }
 
+.character-card:hover {
+    box-shadow: 0 0 6px 5px rgba(white, 0.8);
+}
+
 
 // ! TODO Change classes
 .poison {
@@ -55,7 +60,7 @@ export default {
 }
 
 .fire {
-    background-color: lightcoral;
+    background-color: #E24242;
 }
 
 .ice {
@@ -63,15 +68,11 @@ export default {
 }
 
 .grass {
-    background-color: lightgreen;
+    background-color: greenyellow;
 }
 
 .water {
     background-color: dodgerblue;
-}
-
-.grass {
-    background-color: lightgreen;
 }
 
 .electric {
@@ -79,19 +80,22 @@ export default {
 }
 
 .bug {
-    background-color: orangered;
+    background-color: darkgreen;
+    color: white;
 }
 
 .normal {
-    background-color: lightslategrey;
+    background-color: lightyellow;
 }
 
 .dark {
-    background-color: darkslategrey;
+    background-color: #2C2E2B;
+    color: white;
 }
 
 .ground {
     background-color: brown;
+    color: white;
 }
 
 .dragon {
@@ -103,11 +107,12 @@ export default {
 }
 
 .psychic {
-    background-color: green;
+    background-color: fuchsia;
 }
 
 .rock {
-    background-color: purple;
+    background-color: darkslategrey;
+    color: white;
 }
 
 .water {
@@ -115,10 +120,15 @@ export default {
 }
 
 .ghost {
-    background-color: darkkhaki;
+    background-color: purple;
+    color: white;
 }
 
 .fighting {
-    background-color: lawngreen;
+    background-color: orangered;
+}
+
+.flying {
+    background-color: #7DB808;
 }
 </style>
