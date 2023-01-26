@@ -3,4 +3,12 @@
 body {
     font-family: $font;
     background-color: $bg-red;
+
+    .img-title {
+        width: 15%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 10px;
+    }
 }

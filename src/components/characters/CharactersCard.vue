@@ -7,7 +7,6 @@ export default {
         number: Number,
         name: String,
         type: String,
-        color: String
     }
 }
 </script>
@@ -109,5 +108,17 @@ export default {
 
 .rock {
     background-color: purple;
+}
+
+.water {
+    background-color: aqua;
+}
+
+.ghost {
+    background-color: darkkhaki;
+}
+
+.fighting {
+    background-color: lawngreen;
 }
 </style>

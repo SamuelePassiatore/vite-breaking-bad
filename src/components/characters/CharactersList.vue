@@ -25,7 +25,7 @@ export default {
 <style lang="scss" scoped>
 #characters {
     background-color: grey;
-    min-height: 80vh;
+    min-height: 75vh;
     margin: 30px 20px;
     display: flex;
     align-items: center;
